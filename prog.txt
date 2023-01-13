@@ -1,0 +1,10 @@
+Introduction, simple examples.
+!!!Big-O notation, Simple Problems, Naive Approach
+!!!Recursion, Stack
+!Introduction to Divide and Conquer Algorithms. Merge Sort example
+!!!Quick Sort
+!!Dynamic Arrays (Array List) and amortized analysis
+!!Stacks and Queues - Linked List
+!!!!Trees. Binary Tree, AVL Tree, Red-Black Tree.
+!!Hashing, Hash Functions and Hash Tables
+Test.(optional) Popular algorithms for technical interviews
