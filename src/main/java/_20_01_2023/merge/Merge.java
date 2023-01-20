@@ -1,15 +1,21 @@
-package _20_01_2023;
+package _20_01_2023.merge;
 
-import java.util.Arrays;
+import java.util.Random;
 
-public class Test {
+public class Merge {
+    static int[] array = new int[100_000_000];
     // a +=2 -> a = a + 2;
 
     public static void main(String[] args) {
-        int[] array = {7, 89, 65, 4, 1, 12, 30, 10, 2, 11, 45, 6, 8, 73};
-        System.out.println(arrayToString(array));
+        for (int i = 0; i < args.length; i++) {
+            array[i] = new Random().nextInt(100_000_000);
+        }
+        //System.out.println(arrayToString(array));
+        long time = System.currentTimeMillis();
         array = mergeSort(array);
-        System.out.println(arrayToString(array));
+        System.out.println(System.currentTimeMillis() - time);
+
+       // System.out.println(arrayToString(array));
     }
 
     public static int[] mergeSort(int[] array) {
