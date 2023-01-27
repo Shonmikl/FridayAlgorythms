@@ -86,9 +86,9 @@ public class Quick {
         if(end <= begin) {
             return;
         }
-
+        // [- - - - - - - - - - - - ]
         int pivot = partition(array, begin, end);
         quickSort(array, begin, pivot-1);
-        quickSort(array, pivot+1, end);
+        quickSort(array, pivot + 1, end);
     }
 }
