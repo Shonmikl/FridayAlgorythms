@@ -10,8 +10,8 @@ public class FibonacciTest {
 
 
         long recStartTime = System.currentTimeMillis();
-        System.out.println("Loop: " + Fibonacci.fibRecursive(n));
-        System.out.println("Loop time is: " + (System.currentTimeMillis() - recStartTime));
+        System.out.println("Recurs: " + Fibonacci.fibRecursive(n));
+        System.out.println("Recurs time is: " + (System.currentTimeMillis() - recStartTime));
 
     }
 }

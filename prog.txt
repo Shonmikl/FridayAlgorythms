@@ -1,8 +1,6 @@
 Introduction, simple examples.
 +++Big-O notation, Simple Problems, Naive Approach
-
 +++Recursion
-
 +++Introduction to Divide and Conquer Algorithms. Merge Sort example
 +++Quick Sort
 
