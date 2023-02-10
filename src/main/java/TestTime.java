@@ -54,5 +54,7 @@ public class TestTime {
         Quick.quickSort1(testArr, 0, testArr.length-1);
         System.out.println("Quick: " + (System.currentTimeMillis() - mergeSortTime));
 
+        System.out.println(5 + "5" + 5);
+
     }
 }

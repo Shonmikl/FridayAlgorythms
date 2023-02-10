@@ -6,9 +6,9 @@ Introduction, simple examples.
 
 +++Dynamic Arrays (Array List) and amortized analysis
 
-!!Stacks and Queues - Linked List
++++Stacks and Queues - Linked List
 +++Trees. Binary Tree, AVL Tree, Red-Black Tree.
 !!Hashing, Hash Functions and Hash Tables
 Test.(optional) Popular algorithms for technical interviews
 
-| | | | | |
+| | | | |
