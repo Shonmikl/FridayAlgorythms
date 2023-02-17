@@ -18,7 +18,7 @@ public class Haffman {
 
         //Генерируем список листов нашего дерева
         ArrayList<CodeTreeNode> codeTreeNodes = new ArrayList<>();
-        for(Character c : frequencies.keySet()) {
+        for (Character c : frequencies.keySet()) {
             codeTreeNodes.add(new CodeTreeNode(c, frequencies.get(c)));
         }
 
@@ -27,7 +27,7 @@ public class Haffman {
 
         //Генерим коды
         TreeMap<Character, String> codes = new TreeMap<>();
-        for(Character c : frequencies.keySet()) {
+        for (Character c : frequencies.keySet()) {
             //добавляем код для каждого символа из нашего дерева
             codes.put(c, tree.getCodeForCharacter(c, ""));
         }
@@ -40,13 +40,12 @@ public class Haffman {
             encoded.append(codes.get(text.charAt(i)));
         }
 
-        System.out.println("Размер исходной строки: " + text.getBytes().length + 8 + " бит.");
+        System.out.println("Размер исходной строки: " + text.getBytes().length * 8 + " бит.");
         System.out.println("Размер сжатой строки: " + encoded.length() + " бит.");
         System.out.println("Биты сжатой строки: " + encoded);
 
         //Надо раскодировать
         String decoded = huffmanDecode(encoded.toString(), tree);
-
 
         System.out.println("Декодированный текст: " + decoded);
     }
@@ -159,18 +158,18 @@ public class Haffman {
     //4. Декодируем обратно в текст
     private static String huffmanDecode(String encoded, CodeTreeNode tree) {
         StringBuilder decoded = new StringBuilder();
-        
+
         //переменная для хранения узла, который будем получать пока будем
         //идти по нашему кодовому дереву
         CodeTreeNode node = tree;
-        
+
         //теперь идем по битам (зашифрованной строке)
         for (int i = 0; i < encoded.length(); i++) {
             //если текущий бит 0 -> идем налево
             node = encoded.charAt(i) == '0' ? node.left : node.right;
 
             //если мы дошли до какого-то листа и у него есть символ
-            if(node.content != null) {
+            if (node.content != null) {
                 //тогда добавляем этот символ в последовательность
                 decoded.append(node.content);
                 //далее возвращаем текущий узел
