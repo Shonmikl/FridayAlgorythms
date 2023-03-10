@@ -8,7 +8,7 @@ Introduction, simple examples.
 
 +++Stacks and Queues - Linked List
 +++Trees. Binary Tree, AVL Tree, Red-Black Tree.
-!!Hashing, Hash Functions and Hash Tables
+Посмотреть --> Hashing, Hash Functions and Hash Tables
 Test.(optional) Popular algorithms for technical interviews
 
-| | | | 
+| | |
