@@ -1,7 +1,5 @@
 package _27_01_2023.fib;
 
-import lombok.var;
-
 public class Fibonacci {
     static int count = 0;
     static int maxIndex = 0;
